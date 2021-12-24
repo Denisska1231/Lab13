@@ -1,6 +1,8 @@
 #include<iostream>
 
 using namespace std;
+template <typename SW>
+SW mySwap(SW&,SW&);
 
 int main(){
 	int x, y;
@@ -29,4 +31,10 @@ int main(){
 
 	return 0;
 }
-
+ 	template<typename SW>
+	SW mySwap(SW&x,SW&y){
+		SW 	z=y;
+			y=x;
+			x=z;
+			return x;
+	}
